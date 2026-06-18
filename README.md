@@ -10,7 +10,7 @@ Turns a raw bug report (pasted from email, WhatsApp, or anywhere) into a structu
 ## Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/bug-triage-skill ~/.claude/skills/bug-triage
+git clone https://github.com/David-021-events/bug-triage-skill ~/.claude/skills/bug-triage
 ```
 
 Then restart Claude Code (or start a new session). The skill is available immediately as `/bug-triage` or `/triage`.

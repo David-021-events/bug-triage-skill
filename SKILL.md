@@ -9,7 +9,7 @@ description: >
   draft with title, repro steps, severity, priority, a code-area hypothesis,
   and a list of what's missing — then waits for explicit confirmation before
   writing anything to Linear.
-repository: https://github.com/YOUR_USERNAME/bug-triage-skill
+repository: https://github.com/David-021-events/bug-triage-skill
 triggers:
   keywords:
     - triage this

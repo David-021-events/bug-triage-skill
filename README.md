@@ -19,6 +19,18 @@ Then restart Claude Code (or start a new session). The skill is available immedi
 
 Paste a bug report and say "triage this", or just invoke `/triage` directly.
 
+## How it reduces mistakes
+
+The draft is built to make a human reviewer's job easy — so a wrong ticket gets caught before it's filed:
+
+- **Every claim is sourced** — each fact cites the report ("…the phrase you said") or a `file:line` from the code, or is explicitly marked as inference.
+- **Nothing is fabricated** — gaps in repro steps, environment, or error text are surfaced as `UNKNOWN`, never guessed.
+- **Confidence flags** — the cause hypothesis, severity, and priority each carry a confidence level, and low-confidence items are flagged to verify before creating.
+- **A pre-approval self-check** — before asking you to approve, the skill checks its own draft and tells you what to scrutinize.
+- **Approval gate** — nothing is written to Linear without your explicit go-ahead.
+
+For a complete worked example, see [references/walkthrough.md](references/walkthrough.md).
+
 ## Setting a default Linear project
 
 The skill will ask which project to file bugs in the first time you use it each session. To skip that prompt, add a line to your project's `CLAUDE.md`:
@@ -26,6 +38,10 @@ The skill will ask which project to file bugs in the first time you use it each 
 ```
 Linear bug project: your-project-name
 ```
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for version history and feature additions.
 
 ## License
 

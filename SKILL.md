@@ -46,7 +46,7 @@ approval to create means approval to create the whole thing.
 
 ## What "verify" means here (and its limit)
 
-This skill cannot actually reproduce a bug. Be honest about this. What it *can*
+This skill cannot actually reproduce a bug. What it *can*
 do is read the repo to form a hypothesis about the likely cause and lay out
 steps a human would follow to confirm it. Present reproduction as "steps to
 reproduce" for a human to run, never as "I confirmed this."
